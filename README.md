@@ -1,5 +1,7 @@
 # EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
-
+*your roll no - 212223240144
+ * your name - SAJITH AHAMED F
+ * department and year AIML & FIRST YEAR
 
 ## AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
@@ -53,8 +55,15 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 
+PICTORIAL REPRESENTATION:
 
-![image](https://user-images.githubusercontent.com/36288975/163532979-a2a5cb5c-f495-442c-843e-bebb82737a35.png)
+
+![LOGIC DIAGRAM](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149937471/17c68247-ca4d-49c0-ace6-e0645f70e414)
+
+
+SCHEMATIC DIAGRAM:
+
+![SCHEMATIC DIAGRAM](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149937471/e71f43b8-6b5f-449b-baf6-a0a48a09d3ad)
 
 
 
@@ -76,9 +85,35 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
+ 
+ ```
+int LED=7;
+int FSR;
+void setup()
+{
+  pinMode(LED, OUTPUT);
+  Serial.begin(9600);
+}
+void loop()
+{
+  FSR =analogRead(A0);
+  Serial.print("Raw value+");
+  Serial.println(FSR);
+  delay(500);
+  int m;
+  m=map(FSR,0,159,0,10);
+  Serial.println("Mapped value=");
+  Serial.println(m);
+  if (FSR>50)
+  {
+    digitalWrite(LED,LOW);
+    delay(500);
+    digitalWrite(LED,HIGH);
+    delay(500);
+    
+}
+}
+```
  
  
  
@@ -92,10 +127,15 @@ The easiest way to measure a resistive sensor is to connect one end to power and
  
  
  
- 
- 
+ TABLE:
 
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
+![SHEET](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149937471/62460787-e373-40fa-a29b-785b476a3b87)
+
+
+CHART:
+
+
+![EXP 3 CHART](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149937471/deb3d3ad-04da-4849-8e59-c7e09c39b572)
 
 
 ### TABLE -02 standard deviation table 
@@ -111,7 +151,7 @@ N is the total number of values
 
 For those unfamiliar with summation notation, the equation above may seem daunting, but when addressed through its individual components, this summation is not particularly complicated. The i=1 in the summation indicates the starting index, i.e. for the data set 1, 3, 4, 7, 8, i=1 would be 1, i=2 would be 3, and so on. Hence the summation notation simply means to perform the operation of (xi - μ)2 on each value through N, which in this case is 5 since there are 5 values in this data set.
 
-EX:           μ = (1+3+4+7+8) / 5 = 4.6        
+EX:           μ = (1+3+5+6+7) / 5 = 4.6        
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
 
