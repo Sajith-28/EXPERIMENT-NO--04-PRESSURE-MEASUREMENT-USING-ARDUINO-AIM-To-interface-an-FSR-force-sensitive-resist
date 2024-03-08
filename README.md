@@ -130,3 +130,13 @@ RESULTS : Arduino uno is interfaced with FSR and output values are indicated on 
 
 
 ### RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
+
+
+DATE : 01.03.2024
+NAME : SAJITH AHAMED.F
+ROLLNUMBER : 212223240144
+DEPARTMENT: ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
+
+
+
+
