@@ -98,20 +98,20 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
 
-###OUTPUT:
-###FIGURE 01:
+### OUTPUT:
+### FIGURE 01:
 ![LOGIC DIAGRAM](https://github.com/Sajith-28/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149937471/bda1af75-a75d-4020-a29b-9699eefe7ef6)
 
-###SCHEMATIC VIEW:
+### SCHEMATIC VIEW:
 
 ![SCHEMATIC DIAGRAM](https://github.com/Sajith-28/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149937471/5fe19050-7525-4def-8184-2cbb26174043)
 
-###TABULATED VIEW:
+### TABULATED VIEW:
 
 ![SHEET](https://github.com/Sajith-28/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149937471/02f44929-3060-4dea-9002-439a7cd8639e)
 
 
-###GRAPH:
+### GRAPH:
 
 ![EXP 3 CHART](https://github.com/Sajith-28/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149937471/bc08c414-cb14-47ca-999d-626403371a9a)
 
